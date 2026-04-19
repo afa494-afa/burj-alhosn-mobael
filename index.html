@@ -5,47 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>برج الحصن موبايل</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; background-color: #f4f4f4; margin: 0; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; background-color: #f9f9f9; margin: 0; padding: 0; }
         
-        /* تأثير الشعار المتحرك */
-        .marquee { background: #007bff; color: white; padding: 10px; overflow: hidden; white-space: nowrap; font-weight: bold; }
-        .marquee span { display: inline-block; animation: marquee 10s linear infinite; }
+        /* الشعار المتحرك */
+        .marquee-container { background: #d32f2f; color: white; padding: 10px 0; overflow: hidden; white-space: nowrap; font-weight: bold; border-bottom: 3px solid #b71c1c; }
+        .marquee-container span { display: inline-block; animation: marquee 15s linear infinite; }
         @keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
 
-        header { background: #333; color: #fff; padding: 20px; }
-        section { background: white; margin: 20px auto; padding: 20px; width: 80%; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h2 { color: #007bff; }
+        header { background: #263238; color: #fff; padding: 30px; }
+        
+        .container { width: 90%; max-width: 800px; margin: 20px auto; }
+        
+        section { background: white; margin-bottom: 20px; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-right: 5px solid #d32f2f; }
+        
+        h2 { color: #d32f2f; margin-top: 0; }
+        
+        footer { background: #263238; color: #aaa; padding: 20px; font-size: 0.9em; }
     </style>
 </head>
 <body>
 
-    <div class="marquee">
-        <span>أهلاً بكم في برج الحصن موبايل - أحدث الأجهزة وأفضل خدمات الصيانة بين أيديكم!</span>
+    <div class="marquee-container">
+        <span>أهلاً بكم في برج الحصن موبايل - نوفر لكم أحدث الهواتف، أرقى الإكسسوارات، وخدمات صيانة احترافية!</span>
     </div>
 
     <header>
         <h1>برج الحصن موبايل</h1>
+        <p>وجهتك الأولى في الحصن لكل ما يخص عالم الاتصالات</p>
     </header>
 
-    <main>
+    <div class="container">
         <section id="phones">
-            <h2>قسم الهواتف الذكية</h2>
-            <p>تصفح أحدث إصدارات الهواتف بأسعار تنافسية.</p>
+            <h2>📱 قسم الهواتف</h2>
+            <p>أحدث أجهزة الأندرويد والآيفون بضمان حقيقي وأسعار تنافسية.</p>
         </section>
 
         <section id="accessories">
-            <h2>قسم الإكسسوارات</h2>
-            <p>شواحن، سماعات، وكفرات بجودة عالية.</p>
+            <h2>🎧 قسم الإكسسوارات</h2>
+            <p>تشكيلة واسعة من الشواحن الأصلية، السماعات، والكفرات العصرية.</p>
         </section>
 
         <section id="maintenance">
-            <h2>قسم الصيانة</h2>
-            <p>فريقنا مستعد لصيانة جهازك بأسرع وقت وبدقة.</p>
+            <h2>🛠️ قسم الصيانة</h2>
+            <p>فريق فني متخصص لإصلاح الأعطال البرمجية وصيانة الهواتف بدقة عالية.</p>
         </section>
-    </main>
+    </div>
 
     <footer>
-        <p>برج الحصن موبايل - لخدمتكم دائماً</p>
+        <p>برج الحصن موبايل &copy; 2026 - تواصلوا معنا في فرعنا</p>
     </footer>
 
 </body>
